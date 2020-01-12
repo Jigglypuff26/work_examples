@@ -1,0 +1,163 @@
+// main: ../main.less
+
+.descr {
+    background-color: @white-2;
+}
+
+.descr_inner {
+    display: flex;
+
+    @media @tab-1024 and @tab-min {
+        justify-content: center;
+    }
+}
+
+.descr_photo {
+    display: flex;
+    width: 38%;
+
+    @media @tab,
+    @tab-1024 {
+        display: none;
+    }
+}
+
+.descr_photo_img {
+    margin: 247px auto;
+}
+
+.descr_cont {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 62%;
+
+    @media @tab {
+        width: 100%;
+        justify-content: center;
+        padding: 80px 0;
+    }
+
+    @media @tab-1024 and @tab-min {
+        width: 100%;
+        max-width: 797px;
+        padding: 80px 0;
+        justify-content: center;
+    }
+
+    @media @mobil_start and @mobil_stop {
+        padding: 0;
+    }
+
+    @media @mobil_min_start {
+        padding: 0;
+    }
+}
+
+.descr_cont_item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+
+
+
+    // width: 272px;
+    // height: 322px;
+    width: 18.33rem;
+    height: 21.46rem;
+
+    margin-left: 100px;
+    margin-top: 113px;
+    padding: 0 27px;
+
+    background-color: #fafafc;
+    box-shadow: 0 5px 8px 0px rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+
+    transition: box-shadow .2s linear;
+
+    &:hover {
+        box-shadow: 0 0 25px fade(#000, 25%);
+    }
+
+    &--2 {
+        margin-left: 431px;
+        margin-top: 208px;
+    }
+
+    &--3 {
+        margin-left: 33px;
+        margin-top: 502px;
+    }
+
+    &--4 {
+        margin-left: 384px;
+        margin-top: 629px;
+    }
+
+    @media @tab,
+    @tab-1024 {
+        position: relative;
+
+        margin: 2.33rem;
+
+        &--2 {}
+
+        &--3 {}
+
+        &--4 {}
+
+    }
+
+    @media @mobil_start and @mobil_stop {
+        position: relative;
+
+        margin: 1rem;
+
+        &--2 {}
+
+        &--3 {}
+
+        &--4 {}
+    }
+
+    @media @mobil_min_start {
+        position: relative;
+
+        margin: 1rem;
+
+        &--2 {}
+
+        &--3 {}
+
+        &--4 {}
+    }
+
+}
+
+.descr_cont_img {}
+
+.descr_cont_h3 {
+    padding-top: 35px;
+
+    font-size: 0.93rem;
+    font-family: inherit;
+    font-weight: 700;
+    text-transform: capitalize;
+
+    color: @dark-blue;
+}
+
+.descr_cont_p {
+    padding-top: 28px;
+
+    font-size: 0.93rem;
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 1.6;
+
+    color: @gray-blue;
+}

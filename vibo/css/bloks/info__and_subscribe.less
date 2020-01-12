@@ -1,0 +1,165 @@
+// main: ../main.less
+
+.info__and_subscribe {
+    padding-top: 37px;
+}
+
+.info__and_subscribe_pleace {
+    margin-top: 117px;
+    margin-bottom: 87px;
+
+    @media @mobil_start and @mobil_stop {
+        margin-top: 30px;
+    }
+
+    @media @mobil_min_start {
+        margin-top: 30px;
+    }
+}
+
+.info_end {
+    display: flex;
+    justify-content: center;
+
+    @media @mobil_start and @mobil_stop {
+        display: block;
+    }
+
+    @media @mobil_min_start {
+        display: block;
+    }
+}
+
+.info_item {
+    position: relative;
+    margin-right: 132px;
+
+    h1 {
+        padding-bottom: 35px;
+
+        font-family: inherit;
+        font-size: 1rem;
+        color: @dark-blue;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    a {
+        text-decoration: none;
+        line-height: 1.8;
+
+        font-family: inherit;
+        font-size: 1rem;
+        color: @gray-blue;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media @tab {
+        margin-right: 47px;
+
+        h1 {
+            font-size: 1.2rem;
+        }
+
+        a {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media @mobil_start and @mobil_stop {
+        padding-bottom: 15px;
+
+        h1 {
+            padding-bottom: 5px;
+        }
+
+        a {
+            padding-bottom: 5px;
+        }
+    }
+
+    @media @mobil_min_start {
+        padding-bottom: 15px;
+
+        h1 {
+            padding-bottom: 5px;
+        }
+
+        a {
+            padding-bottom: 5px;
+        }
+    }
+}
+
+.subscribe {
+    margin-top: 100px;
+    text-align: center;
+
+    @media @mobil_start and @mobil_stop {
+        margin-top: 80px;
+    }
+
+    @media @mobil_min_start {
+        margin-top: 80px;
+    }
+}
+
+.subscribe_h1 {
+    margin-bottom: 36px;
+
+    font-family: inherit;
+    font-size: 2rem;
+    color: @dark-blue;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.subscribe_h2 {
+    margin-bottom: 74px;
+
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 1.6;
+    color: @gray-blue;
+
+    @media @tab {
+        font-size: 1.2rem;
+        padding: 0 80px;
+    }
+
+    @media @mobil_start and @mobil_stop {
+        padding: 0;
+    }
+
+    @media @mobil_min_start {
+        padding: 0;
+    }
+}
+
+.subscribe_email {
+    width: 48%;
+    max-height: 568px;
+
+    border: 0;
+    background-color: #f6f7fb;
+    padding: 0.86rem 2.13rem;
+
+    font-family: inherit;
+    font-size: 1rem;
+    color: @dark-blue;
+    font-weight: 700;
+
+    @media @mobil_start and @mobil_stop {
+        width: 100%;
+    }
+
+    @media @mobil_min_start {
+        width: 100%;
+    }
+}

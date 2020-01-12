@@ -1,0 +1,104 @@
+// main: ../main.less
+
+.platform {
+    background-color: @white-2;
+}
+
+.platform__inner {
+    display: flex;
+
+    @media @tab {
+        display: block;
+    }
+}
+
+.platform__inner_code {
+    width: 50%;
+    padding: 72px 0;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    @media @tab {
+        display: none;
+    }
+}
+
+.platform__inner_phone {
+    width: 50%;
+    padding-top: 90px;
+    padding-left: 110px;
+
+    @media @tab {
+        width: 100%;
+        padding: 80px;
+    }
+
+    @media @mobil_start and @mobil_stop {
+        padding: 80px 0;
+    }
+
+    @media @mobil_min_start {
+        padding: 80px 0;
+    }
+}
+
+.platform__inner_phone_h1 {
+    font-family: inherit;
+    font-size: 2rem;
+    color: @dark-blue;
+    font-weight: 700;
+
+    text-transform: capitalize;
+}
+
+.platform__inner_phone_ul {
+    padding-top: 52px;
+    padding-bottom: 40px;
+    list-style: none;
+}
+
+.platform__inner_phone_li {
+    display: flex;
+    align-items: center;
+
+    padding-bottom: 22px;
+
+    h2 {
+        font-family: inherit;
+        font-size: 1rem;
+        color: @dark-blue;
+        font-weight: 700;
+    }
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.platform__inner_phone_img {
+    margin-right: 15px;
+}
+
+.platform__inner_phone_p {
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 1.6;
+    color: @gray-blue;
+
+    @media @tab {
+        font-size: 1.2rem;
+    }
+
+    @media @mobil_start and @mobil_stop {
+        text-align: justify;
+    }
+
+    @media @mobil_min_start {
+        text-align: justify;
+    }
+}

@@ -1,0 +1,35 @@
+// main: ../main.less
+
+.phone {
+    margin-top: 83px;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media @mobil_start and @mobil_stop {
+        display: none;
+    }
+
+    @media @mobil_min_start {
+        display: none;
+    }
+}
+
+.phone__appname {
+    position: absolute;
+    z-index: 1;
+
+    font-size: 0.93rem;
+    color: @white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.phone__cont {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}

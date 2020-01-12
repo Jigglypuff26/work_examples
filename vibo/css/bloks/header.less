@@ -1,0 +1,25 @@
+// main: ../main.less
+
+.header {
+    background: url("../images/Background.png") center no-repeat;
+    background-size: cover;
+}
+
+
+.header__inner {
+    @media @mobil_start and @mobil_stop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 736px;
+        margin: 0 auto;
+    }
+
+    @media @mobil_min_start {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 736px;
+        margin: 0 auto;
+    }
+}

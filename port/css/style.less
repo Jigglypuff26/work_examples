@@ -1,0 +1,59 @@
+// compress: true
+@import "vars";
+
+
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: @black;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+// Алгоритм подсчета размеров для всех элементов
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+//  блоки
+@import "bloks/container";
+@import "bloks/header";
+@import "bloks/user";
+@import "bloks/nav";
+@import "bloks/intro";
+@import "bloks/social";
+@import "bloks/btn";
+@import "bloks/works";
+@import "bloks/portfolio";
+@import "bloks/work";
+@import "bloks/about";
+@import "bloks/reviwes";
+@import "bloks/news";
+@import "bloks/articles";
+@import "bloks/footer";
+@import "bloks/modal";
+@import "bloks/modal__work";
+@import "bloks/timeline";
+@import "bloks/timeline__progress_bar";
+@import "bloks/contact";
+@import "bloks/form";
+
+//helpers
+@import "helpers";

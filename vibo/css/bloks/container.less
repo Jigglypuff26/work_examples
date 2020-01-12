@@ -1,0 +1,21 @@
+// main: ../main.less
+
+.container {
+    width: 100%;
+    max-width: 1180px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+
+    @media @mobil_rotate_start and @mobil_rotate_stop {
+        max-width: 704px;
+    }
+
+    @media @mobil_start and @mobil_stop {
+
+    }
+
+    @media @mobil_min_start {
+        min-width: 250px;
+    }
+}

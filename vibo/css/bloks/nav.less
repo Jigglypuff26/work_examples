@@ -1,0 +1,152 @@
+// main: ../main.less
+
+.anchor {
+    //должно быть рано высоте  nav
+    padding-top: 87px;
+    margin-top: -87px;
+
+    &:nth-child(1) {
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+
+.indicator_menu {}
+
+
+.nav_wrap {
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+
+    transition: background-color .5s linear;
+
+    @media @tab {
+        background-color: @light-blue;
+    }
+
+
+    &--activ {
+        background-color: @light-blue;
+    }
+}
+
+.nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 24px 0;
+
+    @media @mobil_rotate_start and @mobil_rotate_stop {}
+
+    @media @mobil_start and @mobil_stop {}
+
+    @media @mobil_min_start {}
+}
+
+.nav__logo {}
+
+.nav__logo_img {}
+
+.nav__menu_items_burger {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: auto;
+    margin-top: 24px;
+    margin-right: 24px;
+
+    @media @tab {
+        display: block;
+    }
+}
+
+.nav__menu {
+    @media @tab {
+        display: none;
+    }
+}
+
+.nav__menu_tab {
+
+    display: none;
+
+    @media @tab {
+
+
+        display: flex;
+        position: fixed;
+        z-index: 999;
+        padding-top: 100px;
+        background-color: @light-blue;
+        width: 100vw;
+        transition: .5s;
+
+        transform: translateY(-100%);
+
+        &--activ {
+            transform: translateY(0);
+        }
+    }
+}
+
+.display_block {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.nav__menu__btn {
+    position: relative;
+
+    font-size: 1rem;
+    font-weight: 700;
+    color: @white;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    margin-left: 4rem;
+
+
+    &:after {
+        content: "";
+        width: 0px;
+        height: 2px;
+        background-color: @white;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        z-index: 1;
+
+        transition: width .2s linear;
+    }
+
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+
+    &--activ {
+        &:after {
+            width: 100%;
+        }
+    }
+
+    @media @tab {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: 2rem;
+        text-align: center;
+
+        &--activ {
+            &:after {}
+        }
+    }
+}

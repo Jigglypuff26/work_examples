@@ -1,0 +1,87 @@
+// main: ../main.less
+
+
+.form {
+    margin: 1rem;
+}
+
+
+.form_colums {
+    flex-wrap: wrap;
+}
+
+
+.form_colum {
+    width: 50%;
+    min-width: 300px;
+    padding-right: 1rem;
+    box-sizing: border-box;
+
+    &:nth-child(2) {
+        padding-right: 0;
+    }
+}
+
+.form__imput {
+    width: 100%;
+    min-width: 300px;
+    height: 42px;
+    box-sizing: border-box;
+
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    border: 1px solid @gray;
+
+    font-size: .8rem;
+    font-weight: 300;
+    color: @gray;
+
+    &::placeholder {
+        text-transform: uppercase;
+    }
+
+    &:focus {
+        border-color: @red;
+        outline: none;
+    }
+}
+
+.form_text {
+    margin-bottom: 1rem;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+
+.form__textarea {
+    width: 100%;
+    min-width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+
+    resize: none;
+    padding: 1rem;
+
+    border: 1px solid @gray;
+
+    font-size: .8rem;
+    font-weight: 300;
+    color: @gray;
+
+    &:focus {
+        border-color: @red;
+        outline: none;
+    }
+}
+
+.form_PS {
+    padding: 0 1rem;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 300;
+    color: @gray;
+
+    p {
+        display: inline-block;
+        color: @red;
+    }
+}

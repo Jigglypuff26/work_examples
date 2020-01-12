@@ -1,0 +1,118 @@
+// main: ../main.less
+
+.about {
+    background: @beige;
+}
+
+.about__inner {
+    padding-top: 100px;
+}
+
+.about_peopl {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about_peopl_groop_1 {
+    width: 50%;
+}
+
+.about_peopl_groop_2 {
+    width: 50%;
+}
+
+.about_peopl_p {
+    font-family: inherit;
+    font-size: .93rem;
+    line-height: 1.5;
+    font-weight: 300;
+    color: @gray;
+
+    padding: 0 1rem;
+}
+
+.about_dewelopers {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    justify-content: center;
+}
+
+.about_dewelopers_item {
+    width: 285px;
+    padding: 1rem 0;
+}
+
+.about_dewelopers_photo {
+    width: 263px;
+    height: 250px;
+    margin: 0 auto;
+
+    background: @gray;
+
+    &:hover {
+        .about_dewelopers_photo_img {
+            opacity: .5;
+        }
+
+        .about_dewelopers_social {
+            transform: rotateY(0deg);
+        }
+    }
+}
+
+.about_dewelopers_photo_img {
+    opacity: 1;
+    position: absolute;
+    transition: opacity .5s linear;
+}
+
+.about_dewelopers_social {
+    display: flex;
+    position: relative;
+
+    padding-top: 190px;
+    justify-content: center;
+
+    transform: rotateY(90deg);
+    transition: transform .5s linear;
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    img {
+        width: 18px;
+        padding: .5rem;
+        transition: background .5s linear;
+
+        &:hover {
+            background: @red;
+        }
+    }
+}
+
+.about_dewelopers_name {
+    margin-top: 18px;
+
+    font-family: inherit;
+    font-size: .93rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: @gray;
+}
+
+.about_dewelopers_position {
+    margin-top: 18px;
+
+    font-family: inherit;
+    font-size: .93rem;
+    font-weight: 300;
+    text-align: center;
+    color: @gray;
+}

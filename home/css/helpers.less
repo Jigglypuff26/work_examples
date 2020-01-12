@@ -1,0 +1,53 @@
+// main: main.less
+
+.display__block {
+    display: block;
+    font-family: inherit;
+}
+
+.display__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--form {
+        justify-content: flex-start;
+    }
+}
+
+.display__none {
+    display: none;
+}
+
+.title {
+    text-align: center;
+}
+
+.title_h1 {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: @gray;
+}
+
+.title_h2 {
+    margin-top: 62px;
+
+    font-family: inherit;
+    font-size: 1.03rem;
+    color: @gray;
+}
+
+.accentuation {
+    &:after {
+        content: "";
+        width: 50px;
+        height: 2px;
+        background-color: @gray;
+
+        position: absolute;
+        margin-left: -25px;
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,136 @@
+// main: ../main.less
+
+.blog__inner {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.blog_wrapp {
+    display: block;
+    margin-top: 69px;
+}
+
+.blog_item {
+    display: flex;
+    flex-wrap: wrap;
+
+    transition: .5s;
+
+    &:hover {
+        .blog_item_cont_header_titel {
+            h2 {
+                color: @red;
+            }
+
+            p {
+                color: @red;
+            }
+        }
+
+        .blog_item_cont_btn {
+            color: @red;
+        }
+    }
+}
+
+.blog_item_img {
+    width: 40%;
+    min-width: 300px;
+    max-width: 460px;
+    height: auto;
+    padding: 1rem;
+
+    box-sizing: border-box;
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.blog_item_cont {
+    width: 60%;
+    min-width: 300px;
+
+    box-sizing: border-box;
+
+    padding: 1rem;
+
+}
+
+.blog_item_cont_header {
+    display: flex;
+    align-items: center;
+}
+
+.blog_item_cont_header_data {
+    width: 76px;
+    min-width: 76px;
+    height: 76px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid @gray;
+    text-align: center;
+
+    color: @gray;
+    font-size: .9rem;
+    font-weight: 700;
+
+
+    h2 {
+        font-size: 1.6rem;
+
+        color: @gray;
+    }
+}
+
+.blog_item_cont_header_titel {
+    margin-left: 33px;
+
+    h2 {
+        font-size: 1.06rem;
+        color: @gray;
+        font-weight: 500;
+
+        text-transform: uppercase;
+    }
+
+    h3 {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 22px;
+
+        font-size: .86rem;
+        color: @gray;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.blog_item_cont_p {
+    margin-top: 25px;
+    font-size: .9rem;
+    font-weight: 400;
+    color: @gray;
+    line-height: 1.8;
+}
+
+.blog_item_cont_btn {
+
+    background: none;
+    border: none;
+
+    margin-top: 25px;
+    font-size: .86rem;
+    font-weight: 700;
+    color: @gray;
+
+    text-transform: uppercase;
+
+}
